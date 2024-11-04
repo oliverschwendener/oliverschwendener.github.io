@@ -3,28 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Software Developer, Videographer & Photographer"
+    />
     <title>
       Oliver Schwendener - Software Developer, Videographer & Photographer
     </title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@423&display=swap");
+
+      :root {
+        --background-color: #f8f9fa;
+        --background-color-2: #e9ecef;
+        --foreground-color: #212529;
+        --foreground-color-2: #343a40;
+        --accent-color: #d90429;
+        --accent-color-hover: #ef233c;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-color: #212529;
+          --background-color-2: #343a40;
+          --foreground-color: #f8f9fa;
+          --foreground-color-2: #e9ecef;
+          --accent-color: #ef233c;
+          --accent-color-hover: #d90429;
+        }
+      }
+
+      .container {
+        max-width: 800px;
+        padding: 0 16px;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+
+      body {
+        font-family: "Noto Sans", sans-serif;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        gap: 32px;
+
+        background: linear-gradient(
+          -45deg,
+          var(--background-color),
+          var(--background-color-2)
+        );
+        color: var(--foreground-color);
+      }
+
+      header {
+        font-size: 2rem;
+      }
+
+      footer {
+        width: 100%;
+      }
+
+      a,
+      a:visited {
+        color: var(--accent-color);
+      }
+
+      a:hover {
+        color: var(--accent-color-hover);
+      }
+    </style>
   </head>
   <body>
-    <header>
-      Hi, I'm Oliver Schwendener. I am a software developer, hobby photographer
-      and videographer.
+    <header class="container">
+      Hi, I'm Oliver Schwendener.<br />
+      I am a software developer, videographer and photographer.
     </header>
-    <main>
-      <section>
-        I'm currently working on Ueli, a cross-platform keystroke launcher with
-        the goal to make you more productive on your Desktop.
-      </section>
-      <section>
-        Check out my other work on
-        <a href="https://github.com/oliverschwendener">GitHub</a>,
-        <a href="https://unsplash.com/oliverschwendener">Unsplash</a> or
-        <a href="https://www.youtube.com/@oliverpk">YouTube</a>.
-      </section>
+    <main class="container">
+      I'm currently working on <a href="https://ueli.app">Ueli</a>, a
+      cross-platform keystroke launcher with the goal to boost efficiency and
+      productivity on the desktop. Check out my work on
+      <a href="https://github.com/oliverschwendener">GitHub</a>,
+      <a href="https://unsplash.com/oliverschwendener">Unsplash</a> and
+      <a href="https://www.youtube.com/@oliverpk">YouTube</a>.
     </main>
-    <footer>
+    <footer class="container">
       <a href="mailto:oliver.schwendener@proton.me">Contact me</a>
     </footer>
   </body>
