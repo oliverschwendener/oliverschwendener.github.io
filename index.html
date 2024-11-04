@@ -14,22 +14,22 @@
       @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@423&display=swap");
 
       :root {
-        --background-color: #f8f9fa;
-        --background-color-2: #e9ecef;
+        --background-color: #b0bec5;
+        --background-color-2: #eeeeee;
         --foreground-color: #212529;
         --foreground-color-2: #343a40;
-        --accent-color: #d90429;
-        --accent-color-hover: #ef233c;
+        --accent-color: #388e3c;
+        --accent-color-hover: #ad1457;
       }
 
       @media (prefers-color-scheme: dark) {
         :root {
-          --background-color: #212529;
-          --background-color-2: #343a40;
+          --background-color: #212121;
+          --background-color-2: #263238;
           --foreground-color: #f8f9fa;
           --foreground-color-2: #e9ecef;
-          --accent-color: #ef233c;
-          --accent-color-hover: #d90429;
+          --accent-color: #64ffda;
+          --accent-color-hover: #ff80ab;
         }
       }
 
@@ -69,6 +69,7 @@
       a,
       a:visited {
         color: var(--accent-color);
+        transition: color 150ms ease-in-out;
       }
 
       a:hover {
